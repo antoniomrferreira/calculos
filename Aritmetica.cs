@@ -8,6 +8,16 @@ namespace Calculos
     internal class Aritmetica
     {
         /// <summary>
+        /// Tipo de conversão de ttemperatura a executar.
+        /// </summary>
+        public enumn ConversaoTemperatura
+        {
+            Nulo = 0,
+            CelsiusFahrenheit,
+            FahrenheitCelsius
+        }
+
+        /// <summary>
         /// Operação soma
         /// </summary>
         
@@ -26,6 +36,18 @@ namespace Calculos
         {
             return x-y;
 
+        }
+        public double ConverterTemperatura(ConversãoTemperatura conversao, double temperatura)
+        {
+            if (conversao == ConverterTemperatura.CelsiusFahrenheit)
+            {
+                return (temperatura*1.8000 + 32);
+            }
+            else if (conversao == ConverterTemperatura.FahrenheitCelsius)
+            {
+                return ((temperatura-32)/1.8000);
+            }
+            return -1;
         }
 
     }
