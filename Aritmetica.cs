@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 
 namespace Calculos
 {
-    internal class Aritmetica
+    internal static class Aritmetica
     {
         /// <summary>
         /// Tipo de conversão de ttemperatura a executar.
         /// </summary>
-        public enumn ConversaoTemperatura
+        public static enumn ConversaoTemperatura
         {
             Nulo = 0,
             CelsiusFahrenheit,
@@ -22,7 +22,7 @@ namespace Calculos
         /// </summary>
         
         /// <returns>Reto0rna a soma de dois números.</returns>
-        public int Somar(int x,int y)
+        public static int Somar(int x,int y)
         {
             return x+y;
         }
@@ -32,7 +32,7 @@ namespace Calculos
         /// </summary>
         
         /// <returns>Retorna o resultado da subtração de dois números</returns>
-        public int Subtrair(int x,int y)
+        public static int Subtrair(int x,int y)
         {
             return x-y;
 
